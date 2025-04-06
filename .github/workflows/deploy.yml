@@ -29,6 +29,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }} # 使用 GitHub 自动提供的 Token
           publish_dir: ./site # 指定要发布构建好的网站目录 (MkDocs 默认是 site/)
-          # publish_branch: gh-pages # (可选) 可以指定发布到 gh-pages 分支，更干净
+          publish_branch: gh-pages # (可选) 可以指定发布到 gh-pages 分支，更干净
           # user_name: 'github-actions[bot]' # (可选) Git 提交者用户名
           # user_email: 'github-actions[bot]@users.noreply.github.com' # (可选) Git 提交者邮箱
