@@ -1,0 +1,9 @@
+
+# 将www域名重定向到non-www域名
+https://www.rwa-courses.metakina.com/* https://rwa-courses.metakina.com/:splat 301!
+
+# 短链接
+/basics /courses/module1 301
+/blockchain /courses/module2 301
+/investment /courses/module3 301
+/cases /courses/module4 301

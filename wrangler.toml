@@ -1,0 +1,15 @@
+
+name = "rwa-course-worker"
+type = "javascript"
+account_id = "your-account-id" # 部署时替换为实际ID
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2023-01-01"
+
+[site]
+bucket = "./site"
+entry-point = "workers-site"
+
+[build]
+command = "mkdocs build"

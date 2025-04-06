@@ -1,0 +1,41 @@
+
+site_name: METAKINA RWA课程学习平台
+site_url: https://rwa-courses.metakina.com/
+site_description: 免费的RWA(Real World Assets)课程学习平台，提供全面的实物资产代币化知识
+site_author: METAKINA
+
+theme:
+  name: material
+  language: zh
+  palette:
+    primary: indigo
+    accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - content.tabs.link
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+
+nav:
+  - 首页: index.md
+  - 课程模块:
+    - 课程概述: courses/overview.md
+    - 模块一：RWA基础: courses/module1.md
+    - 模块二：区块链与RWA: courses/module2.md
+    - 模块三：RWA投资策略: courses/module3.md
+    - 模块四：RWA实践案例: courses/module4.md
+  - 资源中心: resources.md
+  - 关于METAKINA: about.md
