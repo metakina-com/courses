@@ -18,6 +18,8 @@
 
 选择以下任意一个模块开始您的RWA学习之旅：
 
+### 第一部分：RWA 认知与价值基础
+
 <div class="grid cards" markdown>
 
 - :material-school-outline: [**RWA基础**](./courses/module1.md)
@@ -30,6 +32,12 @@
     - 智能合约与资产代币化
     - 代币标准与DeFi集成
 
+</div>
+
+### 第二部分：项目运作全景
+
+<div class="grid cards" markdown>
+
 - :material-chart-line: [**RWA投资策略**](./courses/module3.md)
     - 投资基本原则
     - 风险评估与管理
@@ -37,7 +45,49 @@
 
 - :material-lightbulb-on: [**RWA实践案例**](./courses/module4.md)
     - 成功项目分析
-    - 行业趋势与挑战
+    - 行业趋势
+    - 挑战与解决方案
+
+- :material-shield-lock: [**合规生命线**](./courses/module5.md)
+    - 代币定性与监管影响
+    - 全球监管格局
+    - KYC/AML与数据隐私
+
+- :material-bullhorn: [**走向市场**](./courses/module6.md)
+    - 持续运营策略
+    - 营销与品牌建设
+    - 社区与投资者关系
+
+</div>
+
+### 第三部分：应用与未来展望
+
+<div class="grid cards" markdown>
+
+- :material-magnify: [**行业深潜**](./courses/module7.md)
+    - 各类资产案例剖析
+    - 成功经验与失败教训
+    - 跨行业比较
+
+- :material-eye-check: [**慧眼识珠**](./courses/module8.md)
+    - RWA项目评估框架
+    - 风险识别与管理
+    - 尽职调查实务
+
+- :material-rocket-launch: [**预见未来**](./courses/module9.md)
+    - 技术与监管趋势
+    - 创新机遇
+    - 战略思考
+    
+</div>
+
+## 最新课程动态
+
+- 🎉 **全部九大模块已全面上线**！系统掌握RWA知识体系
+- 📊 新增详细案例分析与评估框架，助您实战应用
+- 🔮 前沿趋势与未来展望模块，洞察行业发展方向
+
+[开始完整课程](./courses/overview.md){ .md-button .md-button--primary }势与挑战
     - 实际操作指南
 
 </div>
