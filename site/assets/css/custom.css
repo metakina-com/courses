@@ -1,0 +1,69 @@
+
+/* METAKINA RWA课程平台自定义样式 */
+
+:root {
+  --metakina-primary: #1a237e;
+  --metakina-secondary: #283593;
+  --metakina-accent: #5c6bc0;
+  --metakina-light: #c5cae9;
+}
+
+/* 卡片样式 */
+.course-card {
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* 自定义标题颜色 */
+.md-typeset h1 {
+  color: var(--metakina-primary);
+}
+
+.md-typeset h2 {
+  color: var(--metakina-secondary);
+  border-bottom: 1px solid var(--metakina-light);
+  padding-bottom: 0.3em;
+}
+
+/* 自定义按钮 */
+.md-button.md-button--primary {
+  background-color: var(--metakina-primary);
+  border-color: var(--metakina-primary);
+  color: white;
+}
+
+.md-button.md-button--primary:hover {
+  background-color: var(--metakina-secondary);
+  border-color: var(--metakina-secondary);
+}
+
+/* 学习进度条 */
+.progress-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: var(--metakina-accent);
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+/* 响应式调整 */
+@media only screen and (max-width: 768px) {
+  .course-card {
+    padding: 15px;
+  }
+}
