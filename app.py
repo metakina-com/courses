@@ -22,19 +22,30 @@ def add_header(response):
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def serve(path):
-    if path != "" and os.path.exists(os.path.join(app.static_folder, path)):
+    # 尝试直接提供静态文件
+    static_file_path = os.path.join(app.static_folder, path)
+    if path != "" and os.path.exists(static_file_path) and not os.path.isdir(static_file_path):
         return send_from_directory(app.static_folder, path)
-    else:
-        # 添加一些自定义的上下文变量
-        context = {
-            'build_date_utc': datetime.utcnow(),
-            'version': '1.0.0',
-            'analytics_id': os.environ.get('ANALYTICS_ID', '')
-        }
-        try:
-            return render_template('index.html', **context)
-        except:
-            return send_from_directory(app.static_folder, 'index.html')
+    
+    # 尝试提供目录的索引文件
+    index_path = os.path.join(app.static_folder, path, 'index.html')
+    if os.path.exists(index_path):
+        return send_from_directory(os.path.join(app.static_folder, path), 'index.html')
+    
+    # 添加自定义上下文变量
+    context = {
+        'build_date_utc': datetime.utcnow(),
+        'version': '1.0.0',
+        'analytics_id': os.environ.get('ANALYTICS_ID', '')
+    }
+    
+    # 尝试渲染主模板
+    try:
+        return render_template('index.html', **context)
+    except Exception as e:
+        print(f"模板渲染错误: {e}")
+        # 回退到静态主页
+        return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/api/course-progress')
 def course_progress():
@@ -59,8 +70,17 @@ def sitemap():
 @app.route('/health')
 def health_check():
     return {"status": "ok"}, 200
+    
+@app.errorhandler(404)
+def page_not_found(e):
+    # 尝试提供自定义的404页面
+    try:
+        return send_from_directory(app.static_folder, '404/index.html'), 404
+    except:
+        return "页面未找到", 404
 
 if __name__ == '__main__':
     # 生产环境配置
     debug_mode = os.environ.get('FLASK_DEBUG', 'False').lower() == 'true'
-    app.run(host='0.0.0.0', port=5000, debug=debug_mode)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=debug_mode)
