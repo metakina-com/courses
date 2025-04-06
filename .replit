@@ -16,7 +16,11 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "python -m pip install flask mkdocs mkdocs-material gunicorn"
+args = "pip install flask mkdocs mkdocs-material werkzeug gunicorn"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "mkdir -p overrides site"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"

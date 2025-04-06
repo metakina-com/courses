@@ -7,16 +7,47 @@ site_author: METAKINA
 theme:
   name: material
   language: zh
+  custom_dir: overrides
+  logo: assets/images/metakina_logo.png
+  favicon: assets/images/favicon.png
+  icon:
+    repo: fontawesome/brands/github
   palette:
-    primary: indigo
-    accent: indigo
+    # 亮色模式配置
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至深色模式
+    # 深色模式配置
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换至亮色模式
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.expand
     - navigation.indexes
+    - navigation.tracking
+    - navigation.top
+    - toc.follow
+    - toc.integrate
     - content.tabs.link
     - content.code.copy
+    - content.code.annotate
+    - content.tooltips
+    - search.highlight
+    - search.share
+    - search.suggest
+    
+extra_javascript:
+  - assets/js/custom.js
 
 markdown_extensions:
   - admonition

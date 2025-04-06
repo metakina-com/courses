@@ -1,123 +1,127 @@
+# METAKINA RWA课程学习平台
 
-# 欢迎来到METAKINA RWA课程学习平台
+<div class="hero-section">
+  <h2 class="hero-subtitle">探索区块链与传统资产的融合前沿</h2>
+  <p class="hero-description">欢迎来到METAKINA打造的免费RWA课程学习平台，这里是您系统掌握实物资产代币化（Real World Assets, RWA）知识的最佳起点！</p>
+  <div class="hero-buttons">
+    <a href="/courses/overview" class="md-button md-button--primary">浏览课程</a>
+    <a href="/resources" class="md-button">资源中心</a>
+  </div>
+</div>
 
-## 探索实物资产代币化的无限可能
+## 什么是RWA？
 
-在这个专为区块链爱好者和投资者设计的免费学习平台上，您将深入了解实物资产代币化（Real World Assets, RWA）的核心概念、实施方法和投资策略。
-
-![RWA概念图](/assets/images/rwa_concept.png)
+<div class="rwa-explainer">
+  <div class="rwa-explainer-image">
+    <img src="/assets/images/rwa_concept.png" alt="RWA概念图" />
+  </div>
+  <div class="rwa-explainer-text">
+    <p>RWA（Real World Assets）是指将现实世界中的有形和无形资产（如房地产、艺术品、债券、商品等）通过区块链技术进行代币化，创建数字化的所有权凭证。</p>
+    <p>这一创新过程打破了传统资产流通的地域和时间限制，降低了交易成本，提高了市场效率，开启了资产管理的全新范式。</p>
+  </div>
+</div>
 
 ## 我们的课程特色
 
-- 🚀 **系统化学习路径**：从入门到高级，系统地构建您的RWA知识体系
-- 🔧 **实践导向**：包含丰富的案例分析和实操指南
-- 🤖 **AI辅助学习**：利用人工智能技术提供个性化学习体验
-- 🌐 **专家资源**：来自METAKINA的区块链和金融专家提供的独家见解
+<div class="features-grid">
+  <div class="feature-item">
+    <div class="feature-icon">🚀</div>
+    <h3>系统化学习路径</h3>
+    <p>从入门到高级，系统地构建您的RWA知识体系</p>
+  </div>
 
-## 立即开始学习
+  <div class="feature-item">
+    <div class="feature-icon">🔧</div>
+    <h3>实践导向</h3>
+    <p>包含丰富的案例分析和实操指南</p>
+  </div>
 
-选择以下任意一个模块开始您的RWA学习之旅：
+  <div class="feature-item">
+    <div class="feature-icon">🤖</div>
+    <h3>AI辅助学习</h3>
+    <p>利用人工智能技术提供个性化学习体验</p>
+  </div>
 
-### 第一部分：RWA 认知与价值基础
+  <div class="feature-item">
+    <div class="feature-icon">👥</div>
+    <h3>专家团队授课</h3>
+    <p>由业内顶尖专家打造的课程内容</p>
+  </div>
 
-<div class="grid cards" markdown>
+  <div class="feature-item">
+    <div class="feature-icon">🔄</div>
+    <h3>定期更新</h3>
+    <p>持续跟踪行业最新动态，确保内容时效性</p>
+  </div>
 
-- :material-school-outline: [**RWA基础**](./courses/module1.md)
-    - RWA定义与类型
-    - 传统资产与代币化资产的区别
-    - RWA的优势与挑战
-
-- :material-link: [**区块链与RWA**](./courses/module2.md)
-    - 区块链技术基础
-    - 智能合约与资产代币化
-    - 代币标准与DeFi集成
-
+  <div class="feature-item">
+    <div class="feature-icon">🌐</div>
+    <h3>全球视野</h3>
+    <p>涵盖国际市场动态和监管趋势</p>
+  </div>
 </div>
 
-### 第二部分：项目运作全景
+## 开始您的学习之旅
 
-<div class="grid cards" markdown>
+<div class="course-modules">
+  <div class="course-card">
+    <div class="card-header">
+      <h3>模块一：RWA基础</h3>
+      <span class="level-badge beginner">入门</span>
+    </div>
+    <p>了解RWA的核心概念、发展历史和基本原理</p>
+    <div class="card-footer">
+      <a href="/courses/module1" class="md-button md-button--primary">开始学习</a>
+    </div>
+  </div>
 
-- :material-chart-line: [**RWA投资策略**](./courses/module3.md)
-    - 投资基本原则
-    - 风险评估与管理
-    - 投资组合构建
+  <div class="course-card">
+    <div class="card-header">
+      <h3>模块二：区块链与RWA</h3>
+      <span class="level-badge beginner">入门</span>
+    </div>
+    <p>探索区块链技术如何实现实物资产的代币化</p>
+    <div class="card-footer">
+      <a href="/courses/module2" class="md-button md-button--primary">开始学习</a>
+    </div>
+  </div>
 
-- :material-lightbulb-on: [**RWA实践案例**](./courses/module4.md)
-    - 成功项目分析
-    - 行业趋势
-    - 挑战与解决方案
-
-- :material-shield-lock: [**合规生命线**](./courses/module5.md)
-    - 代币定性与监管影响
-    - 全球监管格局
-    - KYC/AML与数据隐私
-
-- :material-bullhorn: [**走向市场**](./courses/module6.md)
-    - 持续运营策略
-    - 营销与品牌建设
-    - 社区与投资者关系
-
+  <div class="course-card">
+    <div class="card-header">
+      <h3>模块三：RWA投资策略</h3>
+      <span class="level-badge intermediate">进阶</span>
+    </div>
+    <p>掌握RWA投资的方法论和风险管理技巧</p>
+    <div class="card-footer">
+      <a href="/courses/module3" class="md-button md-button--primary">开始学习</a>
+    </div>
+  </div>
 </div>
 
-### 第三部分：应用与未来展望
-
-<div class="grid cards" markdown>
-
-- :material-magnify: [**行业深潜**](./courses/module7.md)
-    - 各类资产案例剖析
-    - 成功经验与失败教训
-    - 跨行业比较
-
-- :material-eye-check: [**慧眼识珠**](./courses/module8.md)
-    - RWA项目评估框架
-    - 风险识别与管理
-    - 尽职调查实务
-
-- :material-rocket-launch: [**预见未来**](./courses/module9.md)
-    - 技术与监管趋势
-    - 创新机遇
-    - 战略思考
-    
+<div class="cta-container">
+  <a href="/courses/overview" class="md-button md-button--primary">查看完整课程目录</a>
+  <a href="/resources" class="md-button">前往资源中心</a>
 </div>
 
 ## 最新课程动态
 
-- 🎉 **全部九大模块已全面上线**！系统掌握RWA知识体系
-- 📊 新增详细案例分析与评估框架，助您实战应用
-- 🔮 前沿趋势与未来展望模块，洞察行业发展方向
+<div class="news-section">
+  <div class="news-card">
+    <div class="news-date">2024年7月</div>
+    <h4>模块九上线：预见RWA未来趋势</h4>
+    <p>探索RWA领域的未来发展方向和创新机遇</p>
+    <a href="/courses/module9" class="news-link">查看详情 →</a>
+  </div>
 
-[开始完整课程](./courses/overview.md){ .md-button .md-button--primary }势与挑战
-    - 实际操作指南
-
+  <div class="news-card">
+    <div class="news-date">2024年6月</div>
+    <h4>案例研究更新：最新RWA成功项目分析</h4>
+    <p>深入剖析最新RWA项目的运作模式和成功因素</p>
+    <a href="/courses/module4" class="news-link">查看详情 →</a>
+  </div>
 </div>
 
-## 为什么选择METAKINA课程平台？
-
-### 专业性
-
-我们的课程内容由METAKINA专业团队精心设计，融合了最新的行业知识和实践经验，确保您能够掌握RWA领域的前沿信息。
-
-### 实用性
-
-每个模块都包含实际案例分析和操作指南，帮助您将理论知识转化为实践技能，为RWA投资和项目参与做好准备。
-
-### 灵活性
-
-课程设计灵活，您可以根据自己的需求和兴趣自由选择学习内容和进度，满足不同背景学习者的需求。
-
-### 互动性
-
-平台集成了丰富的互动功能，包括讨论区、评论系统和知识测试，帮助您更好地理解和应用所学知识。
-
-## 关于METAKINA
-
-METAKINA是区块链和数字资产领域的领军企业，致力于促进传统金融与区块链技术的融合，推动实物资产代币化的实践应用。
-
-[了解更多关于METAKINA](/about)
-
-<div class="cta-box">
-    <h3>准备好开始您的RWA学习之旅了吗？</h3>
-    <a href="/courses/overview" class="md-button md-button--primary">查看课程大纲</a>
-    <a href="https://metakina.com" class="md-button">访问METAKINA官网</a>
+<div class="disclaimer-section">
+  <h3>免责声明</h3>
+  <p>本课程内容由AI辅助生成，仅供教育和说明目的，不构成任何财务、法律或投资建议。信息变化迅速且复杂，在做出任何决策前，您必须与合格的专业人士进行独立核实。METAKINA不对因使用本平台信息而产生的任何损失承担责任。</p>
 </div>
