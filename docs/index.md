@@ -21,21 +21,53 @@
 <div class="grid cards" markdown>
 
 - :material-school-outline: [**RWA基础**](./courses/module1.md)
-    了解RWA的基本概念、历史发展和市场规模
+    - RWA定义与类型
+    - 传统资产与代币化资产的区别
+    - RWA的优势与挑战
 
-- :fontawesome-solid-link: [**区块链与RWA**](./courses/module2.md)
-    探索区块链技术如何实现实物资产的代币化
+- :material-link: [**区块链与RWA**](./courses/module2.md)
+    - 区块链技术基础
+    - 智能合约与资产代币化
+    - 代币标准与DeFi集成
 
 - :material-chart-line: [**RWA投资策略**](./courses/module3.md)
-    学习如何构建和优化RWA投资组合
+    - 投资基本原则
+    - 风险评估与管理
+    - 投资组合构建
 
-- :material-file-document-outline: [**RWA实践案例**](./courses/module4.md)
-    分析成功的RWA项目和商业模式
+- :material-lightbulb-on: [**RWA实践案例**](./courses/module4.md)
+    - 成功项目分析
+    - 行业趋势与挑战
+    - 实际操作指南
 
 </div>
 
+## 为什么选择METAKINA课程平台？
+
+### 专业性
+
+我们的课程内容由METAKINA专业团队精心设计，融合了最新的行业知识和实践经验，确保您能够掌握RWA领域的前沿信息。
+
+### 实用性
+
+每个模块都包含实际案例分析和操作指南，帮助您将理论知识转化为实践技能，为RWA投资和项目参与做好准备。
+
+### 灵活性
+
+课程设计灵活，您可以根据自己的需求和兴趣自由选择学习内容和进度，满足不同背景学习者的需求。
+
+### 互动性
+
+平台集成了丰富的互动功能，包括讨论区、评论系统和知识测试，帮助您更好地理解和应用所学知识。
+
 ## 关于METAKINA
 
-METAKINA是区块链和数字资产领域的领先企业，致力于促进传统金融与区块链技术的融合。通过这个免费的学习平台，我们希望为行业培养更多的人才，推动RWA生态系统的健康发展。
+METAKINA是区块链和数字资产领域的领军企业，致力于促进传统金融与区块链技术的融合，推动实物资产代币化的实践应用。
 
-[了解更多关于METAKINA的信息](./about.md){ .md-button }
+[了解更多关于METAKINA](/about)
+
+<div class="cta-box">
+    <h3>准备好开始您的RWA学习之旅了吗？</h3>
+    <a href="/courses/overview" class="md-button md-button--primary">查看课程大纲</a>
+    <a href="https://metakina.com" class="md-button">访问METAKINA官网</a>
+</div>
