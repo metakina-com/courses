@@ -6,35 +6,81 @@
   --metakina-secondary: #283593;
   --metakina-accent: #5c6bc0;
   --metakina-light: #c5cae9;
+  --metakina-hover: #3949ab;
+  --metakina-background: #f5f7fa;
+  --metakina-text: #333333;
+  --metakina-text-light: #666666;
+  --metakina-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  --metakina-shadow-hover: 0 8px 20px rgba(0,0,0,0.15);
+  --metakina-border-radius: 8px;
 }
 
-/* 卡片样式 */
+/* 全局背景和字体优化 */
+body {
+  background-color: var(--metakina-background);
+  color: var(--metakina-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* 内容区优化 */
+.md-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* 卡片样式增强 */
 .course-card {
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  border-radius: var(--metakina-border-radius);
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--metakina-shadow);
+  transition: all 0.3s ease;
   background-color: white;
+  border-left: 4px solid var(--metakina-primary);
 }
 
 .course-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  box-shadow: var(--metakina-shadow-hover);
+  border-left: 4px solid var(--metakina-accent);
 }
 
-/* 自定义标题颜色 */
+/* 自定义标题样式优化 */
 .md-typeset h1 {
   color: var(--metakina-primary);
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
 }
 
 .md-typeset h2 {
   color: var(--metakina-secondary);
   border-bottom: 1px solid var(--metakina-light);
-  padding-bottom: 0.3em;
+  padding-bottom: 0.5em;
+  font-size: 1.8rem;
+  margin-top: 2rem;
 }
 
-/* 自定义按钮 */
+.md-typeset h3 {
+  color: var(--metakina-accent);
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+.md-typeset p {
+  line-height: 1.7;
+}
+
+/* 自定义按钮优化 */
+.md-button {
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-transform: none;
+  padding: 0.6rem 1.2rem;
+}
+
 .md-button.md-button--primary {
   background-color: var(--metakina-primary);
   border-color: var(--metakina-primary);
@@ -42,28 +88,428 @@
 }
 
 .md-button.md-button--primary:hover {
-  background-color: var(--metakina-secondary);
-  border-color: var(--metakina-secondary);
+  background-color: var(--metakina-hover);
+  border-color: var(--metakina-hover);
+  transform: translateY(-2px);
 }
 
-/* 学习进度条 */
+/* 学习进度条优化 */
 .progress-container {
   width: 100%;
   background-color: #f1f1f1;
   border-radius: 5px;
-  margin: 10px 0;
+  margin: 15px 0;
+  overflow: hidden;
 }
 
 .progress-bar {
-  height: 10px;
+  height: 12px;
   background-color: var(--metakina-accent);
   border-radius: 5px;
-  transition: width 0.3s ease;
+  transition: width 0.5s ease;
+  background-image: linear-gradient(45deg, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+  background-size: 1rem 1rem;
+  animation: progress-bar-stripes 1s linear infinite;
+}
+
+@keyframes progress-bar-stripes {
+  from { background-position: 1rem 0; }
+  to { background-position: 0 0; }
+}
+
+/* 表格优化 */
+.md-typeset table {
+  border-radius: var(--metakina-border-radius);
+  box-shadow: var(--metakina-shadow);
+  overflow: hidden;
+}
+
+.md-typeset table th {
+  background-color: var(--metakina-primary);
+  color: white;
+  padding: 12px 16px;
+}
+
+.md-typeset table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--metakina-light);
+}
+
+.md-typeset table tr:last-child td {
+  border-bottom: none;
+}
+
+.md-typeset table tr:hover {
+  background-color: rgba(0,0,0,0.03);
+}
+
+/* 代码块优化 */
+.md-typeset pre > code {
+  border-radius: var(--metakina-border-radius);
+}
+
+/* 引用块优化 */
+.md-typeset blockquote {
+  border-left: 4px solid var(--metakina-accent);
+  background-color: rgba(92, 107, 192, 0.05);
+  padding: 16px;
+  border-radius: 0 var(--metakina-border-radius) var(--metakina-border-radius) 0;
+}
+
+/* 导航菜单优化 */
+.md-nav__item .md-nav__link--active {
+  color: var(--metakina-accent);
+  font-weight: bold;
+}
+
+.md-nav__link:hover {
+  color: var(--metakina-hover);
+}
+
+/* 事件时间轴样式 */
+.event-timeline {
+  position: relative;
+  margin: 30px 0;
+}
+
+.event-timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: var(--metakina-light);
+}
+
+.event {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+
+.event::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--metakina-accent);
+}
+
+.event-date {
+  font-weight: bold;
+  color: var(--metakina-secondary);
+  margin-bottom: 5px;
+}
+
+.event-title {
+  font-size: 1.05rem;
+}
+
+/* 首页英雄区样式 */
+.hero-section {
+  text-align: center;
+  margin: 40px 0 60px;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(26, 35, 126, 0.05) 0%, rgba(92, 107, 192, 0.15) 100%);
+  border-radius: var(--metakina-border-radius);
+}
+
+.hero-subtitle {
+  color: var(--metakina-accent);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+  border-bottom: none !important;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 25px;
+  color: var(--metakina-text);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+/* RWA解释器布局 */
+.rwa-explainer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.rwa-explainer-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.rwa-explainer-image img {
+  border-radius: var(--metakina-border-radius);
+  box-shadow: var(--metakina-shadow);
+}
+
+.rwa-explainer-text {
+  flex: 1;
+}
+
+.rwa-explainer-text p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* 特色网格 */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.feature-item {
+  background-color: white;
+  padding: 25px;
+  border-radius: var(--metakina-border-radius);
+  box-shadow: var(--metakina-shadow);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--metakina-shadow-hover);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.feature-item h3 {
+  margin-top: 0 !important;
+  font-size: 1.25rem !important;
+  color: var(--metakina-secondary) !important;
+}
+
+/* 课程模块布局 */
+.course-modules {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-header h3 {
+  margin: 0 !important;
+  font-size: 1.2rem !important;
+}
+
+.level-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.beginner {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.intermediate {
+  background-color: #fff8e1;
+  color: #ff8f00;
+}
+
+.advanced {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.card-footer {
+  margin-top: 20px;
+}
+
+/* CTA容器 */
+.cta-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0 50px;
+}
+
+/* 新闻部分 */
+.news-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.news-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: var(--metakina-border-radius);
+  box-shadow: var(--metakina-shadow);
+  border-left: 3px solid var(--metakina-accent);
+}
+
+.news-date {
+  color: var(--metakina-text-light);
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.news-card h4 {
+  margin: 0 0 10px;
+  color: var(--metakina-secondary);
+  font-size: 1.1rem;
+}
+
+.news-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--metakina-accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.news-link:hover {
+  color: var(--metakina-hover);
+}
+
+/* 免责声明部分 */
+.disclaimer-section {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: var(--metakina-border-radius);
+  margin: 40px 0 20px;
+  border-left: 3px solid #ff9800;
+}
+
+.disclaimer-section h3 {
+  color: #bf360c;
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+/* 动画和过渡效果 */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.theme-transition {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* 课程卡片动画 */
+.course-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease, border-left 0.3s ease;
+}
+
+.course-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 固定目录 */
+.toc-fixed {
+  position: fixed;
+  top: 80px;
+  transition: top 0.3s ease;
+}
+
+/* 悬停效果增强 */
+.md-button:hover {
+  transform: translateY(-2px);
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.feature-item:hover .feature-icon {
+  animation: pulse 1s infinite;
 }
 
 /* 响应式调整 */
+@media only screen and (max-width: 992px) {
+  .features-grid, .course-modules {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .rwa-explainer {
+    flex-direction: column;
+  }
+  
+  .rwa-explainer-image {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .course-card {
-    padding: 15px;
+    padding: 18px;
+  }
+  
+  .md-typeset h1 {
+    font-size: 1.8rem;
+  }
+  
+  .md-typeset h2 {
+    font-size: 1.5rem;
+  }
+  
+  .md-content {
+    padding: 20px 15px;
+  }
+  
+  .md-typeset table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .features-grid, .course-modules, .news-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-buttons, .cta-container {
+    flex-direction: column;
   }
 }
