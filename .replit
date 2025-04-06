@@ -4,3 +4,23 @@ channel = "stable-24_05"
 
 [deployment]
 run = ["sh", "-c", "pip install mkdocs mkdocs-material"]
+
+[workflows]
+runButton = "Run Development Server"
+
+[[workflows.workflow]]
+name = "Run Development Server"
+author = 41114374
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "pip install flask mkdocs mkdocs-material gunicorn"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "mkdocs build"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python app.py"

@@ -1,0 +1,16 @@
+
+name = "yuanhua-rwa-platform"
+type = "webpack"
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+
+[site]
+bucket = "./site"
+entry-point = "workers-site"
+
+[env.production]
+workers_dev = false
+route = "*"
+zone_id = ""
