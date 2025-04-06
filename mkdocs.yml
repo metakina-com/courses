@@ -1,8 +1,13 @@
 
 site_name: METAKINA RWA课程学习平台
-site_url: https://rwa-courses.metakina.com/
+site_url: https://[您的GitHub用户名].github.io/[您的仓库名称]/
 site_description: 免费的RWA(Real World Assets)课程学习平台，提供全面的实物资产代币化知识
 site_author: METAKINA
+
+# GitHub Pages 部署配置
+repo_url: https://github.com/[您的GitHub用户名]/[您的仓库名称]
+repo_name: GitHub
+edit_uri: edit/main/docs/
 
 theme:
   name: material
