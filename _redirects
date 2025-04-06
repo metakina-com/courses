@@ -1,6 +1,0 @@
-
-# Redirect old URLs to new ones
-/old-module/* /part1/:splat 301
-
-# SPA fallback
-/* /index.html 200
