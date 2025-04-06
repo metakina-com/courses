@@ -1,0 +1,6 @@
+run = "pip install mkdocs mkdocs-material"
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "pip install mkdocs mkdocs-material"]

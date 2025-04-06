@@ -1,0 +1,34 @@
+# .github/workflows/deploy.yml
+name: Deploy RWA Course to GitHub Pages
+
+on:
+  push: # 当代码推送到 main 分支时触发
+    branches:
+      - main # 或者你的主分支名，如 master
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest # 使用最新的 Ubuntu 运行环境
+    steps:
+      - uses: actions/checkout@v3 # 第一步：检出代码
+
+      - name: Set up Python # 第二步：设置 Python 环境
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x # 使用 Python 3
+
+      - name: Install dependencies # 第三步：安装 MkDocs 和主题
+        run: pip install mkdocs mkdocs-material # 如果用了扩展或插件，也在这里安装
+
+      - name: Build website # 第四步：使用 MkDocs 构建静态网站
+        run: mkdocs build # 构建后的 HTML 文件默认在 site/ 目录下
+
+      - name: Deploy to GitHub Pages # 第五步：部署到 GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3 # 使用一个流行的部署 Action
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # 使用 GitHub 自动提供的 Token
+          publish_dir: ./site # 指定要发布构建好的网站目录 (MkDocs 默认是 site/)
+          # publish_branch: gh-pages # (可选) 可以指定发布到 gh-pages 分支，更干净
+          # user_name: 'github-actions[bot]' # (可选) Git 提交者用户名
+          # user_email: 'github-actions[bot]@users.noreply.github.com' # (可选) Git 提交者邮箱

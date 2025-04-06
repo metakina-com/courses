@@ -1,0 +1,61 @@
+# 项目信息
+site_name: 元话 RWA 课程 (Yuanhua RWA Course)
+site_url: https://your-username.github.io/your-repo-name/  # 或者你的自定义域名
+site_description: '面向企业家、创业者和专业人士的 RWA 实战课程'
+site_author: '元话 RWA (Yuanhua RWA)'
+
+# 版权信息 (可选)
+# copyright: 'Copyright © 2024 元话 RWA'
+
+# 主题配置 (使用 Material 主题)
+theme:
+  name: material
+  language: zh # 设置语言为中文 (也可以用 en)
+  palette: # 配色方案 (可选)
+    scheme: default # default 或 slate
+    primary: indigo # 主色调
+    accent: blue # 强调色
+  features: # 启用特性 (可选)
+    - navigation.tabs # 顶部导航标签
+    - navigation.sections # 侧边栏分组
+    - navigation.top # 返回顶部按钮
+    - search.suggest # 搜索建议
+    - search.highlight # 搜索高亮
+    # - content.code.copy # 代码块复制按钮 (需要 pip install mkdocs-material-extensions)
+    # - content.code.annotate # 代码注解 (需要 pip install mkdocs-material-extensions)
+
+# 导航结构 (非常重要!)
+nav:
+  - '课程首页': 'index.md' # 对应 docs/index.md
+  - '第一部分：认知与价值基础':
+    - '模块一：RWA 浪潮': 'part1/module1_intro.md' # 对应 docs/part1/module1_intro.md
+    - '模块二：核心技术基石': 'part1/module2_tech.md' # 对应 docs/part1/module2_tech.md
+  - '第二部分：项目运作全景':
+    - '模块三：项目生命周期': 'part2/module3_lifecycle.md'
+    - '模块四：金融心脏': 'part2/module4_finance.md'
+    - '模块五：合规生命线': 'part2/module5_compliance.md'
+    - '模块六：走向市场': 'part2/module6_gomarket.md'
+  - '第三部分：应用与未来展望':
+    - '模块七：行业深潜': 'part3/module7_deepdive.md'
+    - '模块八：投资评估': 'part3/module8_invest.md'
+    - '模块九：预见未来': 'part3/module9_future.md'
+  # - '附加资源':
+  #   - '工具箱与模板': 'resources/toolbox.md'
+  #   - '术语表': 'resources/glossary.md'
+
+# Markdown 扩展 (可选, 增强功能)
+# markdown_extensions:
+#   - pymdownx.highlight:
+#       anchor_linenums: true
+#   - pymdownx.inlinehilite
+#   - pymdownx.snippets
+#   - pymdownx.superfences
+#   - admonition # 提示块 (note, warning 等)
+#   - toc:
+#       permalink: true # 标题带永久链接
+
+# 插件 (可选)
+# plugins:
+#   - search # 内建搜索插件
+
+# 注意: 路径是相对于 docs/ 文件夹的。你需要创建对应的文件夹和 .md 文件。
