@@ -21,7 +21,7 @@
 
 - [Coursera - 区块链与金融创新](https://coursera.org)
 - [edX - Blockchain for Business Applications](https://edx.org)
-- [METAKINA学院 - RWA投资分析师认证课程](https://academy.metakina.com)
+- [元话学院 - RWA投资分析师认证课程](https://academy.metakina.com)
 
 ## 工具与平台
 
@@ -80,14 +80,14 @@
 ### 行业论坛
 
 - [RWA Global Forum](https://rwaglobal.forum)
-- [METAKINA社区](https://community.metakina.com)
+- [元话社区](https://community.metakina.com)
 - [Real World DeFi Alliance](https://rwdefi.org)
 
 ### 社交媒体群组
 
 - [Telegram: RWA Investors Chat](https://t.me/RWAinvestors)
 - [Discord: RWA Developers](https://discord.gg/rwadevelopers)
-- [微信公众号: METAKINA RWA研究院](https://weixin.metakina.com)
+- [微信公众号: 元话 RWA研究院](https://weixin.metakina.com)
 
 ### 贡献指南
 
@@ -101,6 +101,6 @@
 ---
 
 <div class="cta-container">
-    <h3>加入METAKINA社区，获取最新RWA资讯</h3>
+    <h3>加入元话社区，获取最新RWA资讯</h3>
     <a href="https://metakina.com/join" class="md-button md-button--primary">立即加入</a>
 </div>
