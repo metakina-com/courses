@@ -12,7 +12,7 @@ theme:
   name: material
   language: zh
   custom_dir: overrides
-  logo: assets/images/metakina_logo.png
+  logo: https://www.metakina.com/assets/images/24f92e68a27e1cbb99aa453000b33a18db6e2814.png
   favicon: assets/images/favicon.png
   icon:
     repo: fontawesome/brands/github
