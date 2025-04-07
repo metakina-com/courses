@@ -1,9 +1,9 @@
 
-# 元华 RWA 课程学习平台 (Yuanhua RWA Course Learning Platform)
+# 元话 RWA 课程学习平台 (Yuanhua RWA Course Learning Platform)
 
 ## 项目概述 (Project Overview)
 
-这是元华 RWA（Real World Assets）课程学习平台，旨在提供全面的 RWA 知识和学习资源，帮助学员深入了解实物资产代币化及其应用场景。
+这是元话 RWA（Real World Assets）课程学习平台，旨在提供全面的 RWA 知识和学习资源，帮助学员深入了解实物资产代币化及其应用场景。
 
 This is the Yuanhua RWA (Real World Assets) course learning platform, designed to provide comprehensive RWA knowledge and learning resources to help students understand real-world asset tokenization and its application scenarios.
 

@@ -1,8 +1,8 @@
-# METAKINA RWA课程学习平台
+# 元话RWA课程学习平台
 
 <div class="hero-section">
   <h2 class="hero-subtitle">探索区块链与传统资产的融合前沿</h2>
-  <p class="hero-description">欢迎来到METAKINA打造的免费RWA课程学习平台，这里是您系统掌握实物资产代币化（Real World Assets, RWA）知识的最佳起点！</p>
+  <p class="hero-description">欢迎来到元话打造的免费RWA课程学习平台，这里是您系统掌握实物资产代币化（Real World Assets, RWA）知识的最佳起点！</p>
   <div class="hero-buttons">
     <a href="/courses/overview" class="md-button md-button--primary">浏览课程</a>
     <a href="/resources" class="md-button">资源中心</a>
@@ -123,5 +123,5 @@
 
 <div class="disclaimer-section">
   <h3>免责声明</h3>
-  <p>本课程内容由AI辅助生成，仅供教育和说明目的，不构成任何财务、法律或投资建议。信息变化迅速且复杂，在做出任何决策前，您必须与合格的专业人士进行独立核实。METAKINA不对因使用本平台信息而产生的任何损失承担责任。</p>
+  <p>本课程内容由AI辅助生成，仅供教育和说明目的，不构成任何财务、法律或投资建议。信息变化迅速且复杂，在做出任何决策前，您必须与合格的专业人士进行独立核实。元话不对因使用本平台信息而产生的任何损失承担责任。</p>
 </div>
